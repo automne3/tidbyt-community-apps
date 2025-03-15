@@ -101,7 +101,7 @@ def get_schema():
                 name = "RSS Feed",
                 desc = "Select which feed to display",
                 icon = "newspaper",
-                default = feed_options[1].value,
+                default = feed_options[0].value if feed_options else "",
                 options = feed_options,
             ),
             schema.Dropdown(
